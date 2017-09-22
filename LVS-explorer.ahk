@@ -144,7 +144,10 @@ Callback(Selected, Escaped = False) {
 	
 	CurrentFolder := NextFolder
 	if (ShiftPressed)
+	{
 		OpenExplorerInFolder(CurrentFolder)
+		GoSub, Fin
+	}
 	else
 		LoadFolder(CurrentFolder)
 	
